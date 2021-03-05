@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "6007cf671789296d2597da6b"
+  },
+  "deleted": false,
+  "email": "teddferdy@gmail.com",
+  "password": "$2b$10$KEGC1XP4iDEfP7YNpyS1VuGD6leBEzdUpdCgaruE5YxVUc.Uh58Xa",
+  "fullname": "teddy",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-20T06:36:23.385Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-20T06:36:23.385Z"
+  }
+},{
+  "_id": {
+    "$oid": "6007d4951789296d2597da6c"
+  },
+  "deleted": false,
+  "email": "yopytribuana@yahoo.com",
+  "password": "$2b$10$ng2ghqq4VeLr7cDLD2QlC.JTAM/gKlXqP/Ks4deqeRmJdhyTQwBme",
+  "fullname": "Yopy Tri Buana",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "082260426032",
+  "created_at": {
+    "$date": "2021-01-20T06:58:29.523Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-20T07:02:02.862Z"
+  }
+},{
+  "_id": {
+    "$oid": "6007d5991789296d2597da6d"
+  },
+  "deleted": false,
+  "email": "dhanarahadyan@yahoo.com",
+  "password": "$2b$10$UvJh/bOHZgIoDsxtXUvFbutPoev.m9CKEdROzLS.AXtl0rTdnMZo6",
+  "fullname": "Rahadyan Nandiwardhana",
+  "role": "user",
+  "description": "Saya adalah pemain sepak bola profesional yang tergabung dalam Tim Nasional Sepak Bola Kampung Lahat U-23, dengan posisi sebagai Penyerang Tulang Kering yang dipercayakan oleh coach dan manager. Saya mencari lawan sebanding untuk bertanding, yang kalah bayar lapangan!",
+  "profilePic": "8f69f7eb9f3d8a5406b88e6fcc32f618.jpeg",
+  "phone": "087871744143",
+  "created_at": {
+    "$date": "2021-01-20T07:02:49.937Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-20T07:04:24.229Z"
+  }
+}]

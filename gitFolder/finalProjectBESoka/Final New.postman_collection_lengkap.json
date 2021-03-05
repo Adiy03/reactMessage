@@ -1,0 +1,3242 @@
+{
+	"info": {
+		"_postman_id": "bc1a5989-4563-43a1-a1e9-5e0fe979cc46",
+		"name": "Final New",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "<<your fullname>>",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "<<your email>>",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "<<your password>>",
+									"type": "text"
+								},
+								{
+									"key": "passwordConfirmation",
+									"value": "<<your password>>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/signup",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sign up Success ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "fullname",
+											"value": "<<your fullname>>",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "<<your email>>",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "<<your password>>",
+											"type": "text"
+										},
+										{
+											"key": "passwordConfirmation",
+											"value": "<<your password>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/signup",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"signup"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 02:40:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "234"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ea-wKVl4CqG/fBy6yeiBY9+ZDWQ+B8\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Sign up success!\",\n    \"token\": <token>\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "<<your email>>",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "<<your password>>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/login",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "<<your email>>",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "<<your password>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/ogin",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"ogin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c4-4g3pKm0tjZ1xPQKYKUdGW8gVmdU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 Jan 2021 00:24:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login success!\",\n    \"token\": <<token>>\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/user",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/user",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2816"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b00-c3NVFIZL9bY7qWU20KZh8CpJ9oI\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Jan 2021 04:44:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"image\": \"/user/\",\n        \"email\": \"farida@gmail.com\",\n        \"id\": 1,\n        \"fullname\": \"farida123\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/\",\n        \"email\": \"farida123@gmail.com\",\n        \"id\": 2,\n        \"fullname\": \"farida123\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"test123@gmail.com\",\n        \"id\": 3,\n        \"fullname\": \"test123\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"test12345@gmail.com\",\n        \"id\": 4,\n        \"fullname\": \"test12345\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"halo123@gmail.com\",\n        \"id\": 5,\n        \"fullname\": null,\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"test1@gmail.com\",\n        \"id\": 7,\n        \"fullname\": \"test1\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"yopy@gmail.com\",\n        \"id\": 8,\n        \"fullname\": \"yopy\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"farid@gmail.com\",\n        \"id\": 9,\n        \"fullname\": \"test\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"teddferdy@gmail.com\",\n        \"id\": 10,\n        \"fullname\": \"teddy ferdian\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"delonge@gmail.com\",\n        \"id\": 11,\n        \"fullname\": \"delonge\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"dhanarahadyan@yahoo.com\",\n        \"id\": 12,\n        \"fullname\": \"Rahadyan Nandiwardhana\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"farida1234567@gmail.com\",\n        \"id\": 13,\n        \"fullname\": \"farida\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"naruto@gmail.com\",\n        \"id\": 15,\n        \"fullname\": \"naruto uzumaki\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/cfc85d5d03b26f13e56ce8212cbc664e.png\",\n        \"email\": \"naruto123@gmail.com\",\n        \"id\": 16,\n        \"fullname\": \"farida\",\n        \"description\": \"this is me\"\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"paijo12@gmail.com\",\n        \"id\": 17,\n        \"fullname\": \"paijo12\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"paijo@gmail.com\",\n        \"id\": 18,\n        \"fullname\": \"paijo\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"soka@gmail.com\",\n        \"id\": 19,\n        \"fullname\": \"soka\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"zidane@gmaul.com\",\n        \"id\": 20,\n        \"fullname\": \"zidane\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"milna@gmail.com\",\n        \"id\": 21,\n        \"fullname\": \"milna\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"amazedtech61@gmail.com\",\n        \"id\": 22,\n        \"fullname\": \"Sugianto\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"steven@gmail.com\",\n        \"id\": 23,\n        \"fullname\": \"steven \",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"qwerty@qw.com\",\n        \"id\": 24,\n        \"fullname\": \"qwerty\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"jodymantap@gmail.com\",\n        \"id\": 25,\n        \"fullname\": \"Jody Mantap\",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"tom@gmail.com\",\n        \"id\": 26,\n        \"fullname\": \"tom \",\n        \"description\": null\n    },\n    {\n        \"image\": \"/user/default-avatar.jpg\",\n        \"email\": \"mark@gmail.com\",\n        \"id\": 27,\n        \"fullname\": \"mark\",\n        \"description\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVhbUB0ZWFtLmNvbSIsIl9pZCI6IjYwMDc5ODM0MTc4OTI5NmQyNTk3ZGE2OSJ9LCJpYXQiOjE2MTExMTEyNTF9.FZJU0bJfJl6ahGGKGRkz8Wgcvlo5H3T2r4RCbIBjXa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/user/profile",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Profile Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/user/profile",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"user",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5a-hqxEkKid0jNkKFJkbjgNNBedKro\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 14 Jan 2021 18:07:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": {\n        \"_id\": \"600798341789296d2597da69\",\n        \"email\": \"team@team.com\",\n        \"fullname\": \"Team D\",\n        \"description\": \"edit your description here\",\n        \"profilePic\": \"/user/profile-picture.jpg\",\n        \"phone\": \"xxx-xxxxxxxxx\",\n        \"id\": \"600798341789296d2597da69\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Edit Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVhbUB0ZWFtLmNvbSIsIl9pZCI6IjYwMDc5ODM0MTc4OTI5NmQyNTk3ZGE2OSJ9LCJpYXQiOjE2MTExMTEyNTF9.FZJU0bJfJl6ahGGKGRkz8Wgcvlo5H3T2r4RCbIBjXa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "Team D (update)",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description updated",
+									"type": "text"
+								},
+								{
+									"key": "profilePic",
+									"type": "file",
+									"src": "/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/user/edit",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								"edit"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Edit Profile Success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fullname",
+											"value": "Team D (update)",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "description updated",
+											"type": "text"
+										},
+										{
+											"key": "profilePic",
+											"type": "file",
+											"src": "/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/user/edit",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"user",
+										"edit"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:00:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "260"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"104-R4xT2JVtu3+yZQUgDQpWtEpjSu4\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": {\n        \"_id\": \"600798341789296d2597da69\",\n        \"email\": \"team@team.com\",\n        \"fullname\": \"Team D (update)\",\n        \"description\": \"description updated\",\n        \"profilePic\": \"/user/b9338569cbddb2be91e3b85ad829eaf7.jpg\",\n        \"phone\": \"12345678\",\n        \"id\": \"600798341789296d2597da69\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiZmFyaWRhQGdtYWlsLmNvbSJ9LCJpYXQiOjE2MTA0NjQ0Mjl9.9QztUoQjb2la-u9yQI8ldr0MNoFP3GbpKa5gf4FBk6o",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/user/delete/<<id_user>>",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"user",
+								"delete",
+								"<<id_user>>"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete User Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/delete/<<id_user>>",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"delete",
+										"<<id_user>>"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c-dlK0GHppWbpG4YasQLujCIXhRQ4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 12 Jan 2021 15:14:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User is deleted\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "Error - user's ID doesn't exist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "farida@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/user/delete/05",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"user",
+										"delete",
+										"05"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:24:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5e-hrMjW+8rE91SPjA9A+cCNX/rhtk\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"id\": {\n            \"value\": \"05\",\n            \"msg\": \"user does not exist!\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Field",
+			"item": [
+				{
+					"name": "Login Manager",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "<<manager email>>",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "<<password>>",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/login",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "<<manager email>>",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "<<password>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/login",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 07:59:43 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "12"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login success!\",\n    \"token\": <token>\n}"
+						},
+						{
+							"name": "Error - email is not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "<<wrong email>>",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "<<your password>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/login",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:00:29 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "113"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"71-zQyBCL1M0GPKrVNUMLX0f/TA0yI\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"email\": {\n            \"value\": \"manager@manage.com\",\n            \"msg\": \"email is not found!\",\n            \"param\": \"email\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Authorization",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGdciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3005/authorization",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3005",
+							"path": [
+								"authorization"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error - Invalid token",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/authorization",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"authorization"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:33:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d-npnYPQlFFTNFfGVBF77ePD/CfUE\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Error!\",\n    \"message\": \"invalid token\"\n}"
+						},
+						{
+							"name": "Authorization Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3005/authorization",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3005",
+									"path": [
+										"authorization"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:32:36 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "109"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6d-WjFoR92iXF/pKQXOQNqpJdDt8P0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success!\",\n    \"message\": \"Authorized!\",\n    \"user\": {\n        \"id\": <<id>>,\n        \"email\": <<manager email>>,\n        \"role\": <<role>>\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Field",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Field Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 07:33:06 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5282"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14a2-SN5Sbdud0gbl/93Xsuh3FnZRBD0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"image\": [\n                \"/images/baskhara-futsal-arena-f3e55e3a4ba9d3bf29f21598efdb091f.jpg\",\n                \"/images/baskhara-futsal-arena-c1fe3e538a916fcc7a8402d23688032a.jpg\",\n                \"/images/baskhara-futsal-arena-b3c752141708e494972b46b2f4f42146.jpg\",\n                \"/images/baskhara-futsal-arena-6738471219a3d03b780d08859d9d1670.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051c9138232609d343d6c6\",\n            \"fieldName\": \"Baskhara Futsal Arena\",\n            \"city\": \"Surabaya\",\n            \"location\": \"Jl. Manyar Jaya Praja I No.47, Menur Pumpungan, Kec. Sukolilo, Kota Surabaya, Jawa Timur, 60118\",\n            \"price\": {\n                \"$numberDecimal\": \"130\"\n            },\n            \"description\": \"Baskhara Futsal Arena terletak di Kota Surabaya, tepatnya di Jl. Manyar Jaya Praja I No.47, Menur Pumpungan, Kec. Sukolilo, Kota Surabaya, Jawa Timur, 60118. Baskhara Futsal Arena terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:28:49.897Z\",\n            \"updated_at\": \"2021-01-20T01:21:25.633Z\",\n            \"id\": \"60051c9138232609d343d6c6\"\n        },\n        {\n            \"image\": [\n                \"/images/centro-futsal-424c6eced5e1c5adf75dd0eee76b9105.jpg\",\n                \"/images/centro-futsal-8a18c399f64bed66256d8fcab3c00af6.jpg\",\n                \"/images/centro-futsal-1846235dccf11742217d474426cd03e5.jpg\",\n                \"/images/centro-futsal-146c33227684f65ae3ccbd48f0339992.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"600514d338232609d343d6c3\",\n            \"fieldName\": \"Centro Futsal\",\n            \"city\": \"Bandung\",\n            \"location\": \"Jl. Margacinta No. 48, Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat, 40286\",\n            \"price\": {\n                \"$numberDecimal\": \"135\"\n            },\n            \"description\": \"Centro Futsal terletak di Kota Bandung, tepatnya di Jl. Margacinta No. 48, Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat, 40286. Centro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:55:47.176Z\",\n            \"updated_at\": \"2021-01-20T01:24:24.774Z\",\n            \"id\": \"600514d338232609d343d6c3\"\n        },\n        {\n            \"image\": [\n                \"/images/futsal-35-8442448240aa3f356a65ce8cfb96da37.jpg\",\n                \"/images/futsal-35-d0456029f8be17a84d0ce2637f3a0451.jpg\",\n                \"/images/futsal-35-dd543522fbb8163b0645e119b379bc4f.jpg\",\n                \"/images/futsal-35-a2093c2b4e608c9f3be4f24387568879.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005159038232609d343d6c4\",\n            \"fieldName\": \"Futsal 35\",\n            \"city\": \"Semarang\",\n            \"location\": \"Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248\",\n            \"price\": {\n                \"$numberDecimal\": \"115\"\n            },\n            \"description\": \"Futsal 35 terletak di Kota Semarang, tepatnya di Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248. Futsal 35 terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:58:56.481Z\",\n            \"updated_at\": \"2021-01-20T01:25:05.110Z\",\n            \"id\": \"6005159038232609d343d6c4\"\n        },\n        {\n            \"image\": [\n                \"/images/golden-futsal-4d750141c628dd662f9435b82a21e11d.jpg\",\n                \"/images/golden-futsal-945e0aa6d600fa31c32de21c02934635.jpg\",\n                \"/images/golden-futsal-1914215dcc70cd37debcfd0faf087c26.jpg\",\n                \"/images/golden-futsal-9a1121f596a654445911597db43caa8a.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051d3638232609d343d6c7\",\n            \"fieldName\": \"Golden Futsal\",\n            \"city\": \"Semarang\",\n            \"location\": \"Jl. Subali Raya No. 6, RT: 1 RW: 4, Krapyak, Kec. Semarang Bar., Kota Semarang, Jawa Tengah 50146\",\n            \"price\": {\n                \"$numberDecimal\": \"125\"\n            },\n            \"description\": \"Golden Futsal terletak di Kota Semarang, tepatnya di Jl. Subali Raya No. 6, RT: 1 RW: 4, Krapyak, Kec. Semarang Bar., Kota Semarang, Jawa Tengah 50146. Golden Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:31:34.213Z\",\n            \"updated_at\": \"2021-01-20T01:25:49.796Z\",\n            \"id\": \"60051d3638232609d343d6c7\"\n        },\n        {\n            \"image\": [\n                \"/images/maestro-futsal-77bfad694c8a252d1996f63ed3784895.jpg\",\n                \"/images/maestro-futsal-5f48406c3a0883bf3bf7b54c3b363744.jpg\",\n                \"/images/maestro-futsal-39707c0f27d1f2ea27a3536a1c622896.jpg\",\n                \"/images/maestro-futsal-91eb00d17d55a7a6bad86c377a1cdaa8.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005148338232609d343d6c2\",\n            \"fieldName\": \"Maestro Futsal\",\n            \"city\": \"Jakarta\",\n            \"location\": \"Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Maestro Futsal terletak di Jakarta Pusat, tepatnya di Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720. Maestro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:54:27.107Z\",\n            \"updated_at\": \"2021-01-20T01:26:30.082Z\",\n            \"id\": \"6005148338232609d343d6c2\"\n        },\n        {\n            \"image\": [\n                \"/images/planet-futsal-2b1a14afe6cf7d7b1467b6f690353b81.jpg\",\n                \"/images/planet-futsal-28a9da6cc253706e3089152ea2b0f3a5.jpg\",\n                \"/images/planet-futsal-392bbde6b9ac8917718f7fea0aeeab73.jpg\",\n                \"/images/planet-futsal-1feb52c2a5bd0754548b815d77213d67.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005143738232609d343d6c1\",\n            \"fieldName\": \"Planet Futsal\",\n            \"city\": \"Jakarta\",\n            \"location\": \"Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Planet Futsal terletak di Jakarta Selatan, tepatnya di Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan. Planet Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:53:11.806Z\",\n            \"updated_at\": \"2021-01-20T01:26:59.863Z\",\n            \"id\": \"6005143738232609d343d6c1\"\n        },\n        {\n            \"image\": [\n                \"/images/radja-futsal-gayamsari-a84484b96f800bfb277d5b9b4c474be3.jpg\",\n                \"/images/radja-futsal-gayamsari-238af1bdb4bb87da814a75310f6dc46e.jpg\",\n                \"/images/radja-futsal-gayamsari-299ffd5a2ab33ab8ffa105f1e572e2af.jpg\",\n                \"/images/radja-futsal-gayamsari-59315ef2f5b107a8df363be74068d519.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60050ec9ba88db45955da702\",\n            \"fieldName\": \"Radja Futsal Gayamsari\",\n            \"city\": \"Semarang\",\n            \"location\": \"Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Radja Futsal Gayamsari terletak di Kota Semarang, tepatnya di Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248. Radja Futsal Gayamsari terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:30:05.133Z\",\n            \"updated_at\": \"2021-01-20T01:27:32.636Z\",\n            \"id\": \"60050ec9ba88db45955da702\"\n        },\n        {\n            \"image\": [\n                \"/images/rajawali-futsal-cb839207a735f2bdfb00613fd2ed5334.jpg\",\n                \"/images/rajawali-futsal-b538611fed69e4e04401a12ef030c0b3.jpg\",\n                \"/images/rajawali-futsal-74c2acb85f734ad720b78e2ba1fd8f0a.jpg\",\n                \"/images/rajawali-futsal-01af9c12044386a100cea60e64724293.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051e1238232609d343d6c8\",\n            \"fieldName\": \"Rajawali Futsal\",\n            \"city\": \"Tangerang\",\n            \"location\": \"Gg. Beringin No.47, RT: 001 RW: 001, Pabuaran, Kec. Karawaci, Kota Tangerang, Banten, 15114\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Rajawali Futsal terletak di Kota Tangerang, tepatnya di Gg. Beringin No.47, RT: 001 RW: 001, Pabuaran, Kec. Karawaci, Kota Tangerang, Banten, 15114. Rajawali Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:35:14.142Z\",\n            \"updated_at\": \"2021-01-20T01:27:49.227Z\",\n            \"id\": \"60051e1238232609d343d6c8\"\n        },\n        {\n            \"image\": [\n                \"/images/sokker-blast-7affaaee7dd281cd6c6a0821e435684f.jpg\",\n                \"/images/sokker-blast-22e34c7c2a9d493c7287af5967611ffb.jpg\",\n                \"/images/sokker-blast-3140c4f920b6f85f2cb9b48b86e1bd6e.jpg\",\n                \"/images/sokker-blast-5af6464c6613574a3ca9265e05c1c634.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051bc438232609d343d6c5\",\n            \"fieldName\": \"Sokker Blast\",\n            \"city\": \"Bandung\",\n            \"location\": \"Jl. Nursaid No.09, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251\",\n            \"price\": {\n                \"$numberDecimal\": \"125\"\n            },\n            \"description\": \"Sokker Blast terletak di Kota Bandung, tepatnya di Jl. Nursaid No.09, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251. Sokker Blast terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:25:24.501Z\",\n            \"updated_at\": \"2021-01-20T01:28:06.672Z\",\n            \"id\": \"60051bc438232609d343d6c5\"\n        },\n        {\n            \"image\": [\n                \"/images/venus-futsal-club-0f0098d0e5315e14aa020ace575fc10c.jpg\",\n                \"/images/venus-futsal-club-ff9cd9f209c13b52d7e8cb2c85d459ac.jpg\",\n                \"/images/venus-futsal-club-28f916ee091162da7eb760c739c925f9.jpg\",\n                \"/images/venus-futsal-club-574fa2426c41d2e7bbbdb682e9678269.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"600513ca38232609d343d6c0\",\n            \"fieldName\": \"Venus Futsal Club\",\n            \"city\": \"Semarang\",\n            \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n            \"price\": {\n                \"$numberDecimal\": \"110\"\n            },\n            \"description\": \"Venus Futsal Club terletak di Kota Semarang, tepatnya di Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272. Venus Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:51:22.789Z\",\n            \"updated_at\": \"2021-01-20T01:28:36.520Z\",\n            \"id\": \"600513ca38232609d343d6c0\"\n        }\n    ],\n    \"totalData\": 10\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One FIeld",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field/<<id_field>>",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field",
+								"<<id_field>>"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One FIeld Error - field's ID doesn't exist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/5ffdeeca5180f1763807d1d3",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"5ffdeeca5180f1763807d1d3"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 07:36:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "121"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79-CKBzQF+XBqGWAz7WA0EvsrStv3c\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"id\": {\n            \"value\": \"5ffdeeca5180f1763807d1d3\",\n            \"msg\": \"field's ID doesn't exist!\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Get One FIeld Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/<<id_field>>",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"<<id_field>>"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 07:34:30 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "957"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3bd-iEq1fbqHPX8VBLh0undS23cRBqA\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": {\n        \"image\": [\n            \"/images/venus-futsal-club-0f0098d0e5315e14aa020ace575fc10c.jpg\",\n            \"/images/venus-futsal-club-ff9cd9f209c13b52d7e8cb2c85d459ac.jpg\",\n            \"/images/venus-futsal-club-28f916ee091162da7eb760c739c925f9.jpg\",\n            \"/images/venus-futsal-club-574fa2426c41d2e7bbbdb682e9678269.jpg\"\n        ],\n        \"deleted\": false,\n        \"_id\": \"600513ca38232609d343d6c0\",\n        \"fieldName\": \"Venus Futsal Club\",\n        \"city\": \"Semarang\",\n        \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n        \"price\": {\n            \"$numberDecimal\": \"110\"\n        },\n        \"description\": \"Venus Futsal Club terletak di Kota Semarang, tepatnya di Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272. Venus Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n        \"created_at\": \"2021-01-18T04:51:22.789Z\",\n        \"updated_at\": \"2021-01-20T01:28:36.520Z\",\n        \"id\": \"600513ca38232609d343d6c0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By City",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field?city=Jakarta",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Jakarta"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By City Error - there are no fields",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?city=Bogor",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Bogor"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:19:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1796"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"704-2s++UkHviyTjVZQosZtrp1oeVoU\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"field\": {\n            \"msg\": \"there is no field available in Bogor\",\n            \"param\": \"field\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Get By City Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?city=Jakarta",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Jakarta"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:19:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1796"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"704-2s++UkHviyTjVZQosZtrp1oeVoU\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"image\": [\n                \"/images/maestro-futsal-77bfad694c8a252d1996f63ed3784895.jpg\",\n                \"/images/maestro-futsal-5f48406c3a0883bf3bf7b54c3b363744.jpg\",\n                \"/images/maestro-futsal-39707c0f27d1f2ea27a3536a1c622896.jpg\",\n                \"/images/maestro-futsal-91eb00d17d55a7a6bad86c377a1cdaa8.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005148338232609d343d6c2\",\n            \"fieldName\": \"Maestro Futsal\",\n            \"city\": \"Jakarta\",\n            \"location\": \"Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Maestro Futsal terletak di Jakarta Pusat, tepatnya di Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720. Maestro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:54:27.107Z\",\n            \"updated_at\": \"2021-01-20T01:26:30.082Z\",\n            \"id\": \"6005148338232609d343d6c2\"\n        },\n        {\n            \"image\": [\n                \"/images/planet-futsal-2b1a14afe6cf7d7b1467b6f690353b81.jpg\",\n                \"/images/planet-futsal-28a9da6cc253706e3089152ea2b0f3a5.jpg\",\n                \"/images/planet-futsal-392bbde6b9ac8917718f7fea0aeeab73.jpg\",\n                \"/images/planet-futsal-1feb52c2a5bd0754548b815d77213d67.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005143738232609d343d6c1\",\n            \"fieldName\": \"Planet Futsal\",\n            \"city\": \"Jakarta\",\n            \"location\": \"Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Planet Futsal terletak di Jakarta Selatan, tepatnya di Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan. Planet Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:53:11.806Z\",\n            \"updated_at\": \"2021-01-20T01:26:59.863Z\",\n            \"id\": \"6005143738232609d343d6c1\"\n        }\n    ],\n    \"totalData\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By Fieldname",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field?fieldname=Venus",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field"
+							],
+							"query": [
+								{
+									"key": "fieldname",
+									"value": "Venus"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By Fieldname Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?fieldname=Venus",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "fieldname",
+											"value": "Venus"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:26:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "967"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3c7-UpEykqAqkzUeyi42+zVyseZNqWo\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"image\": [\n                \"/images/venus-futsal-club-0f0098d0e5315e14aa020ace575fc10c.jpg\",\n                \"/images/venus-futsal-club-ff9cd9f209c13b52d7e8cb2c85d459ac.jpg\",\n                \"/images/venus-futsal-club-28f916ee091162da7eb760c739c925f9.jpg\",\n                \"/images/venus-futsal-club-574fa2426c41d2e7bbbdb682e9678269.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"600513ca38232609d343d6c0\",\n            \"fieldName\": \"Venus Futsal Club\",\n            \"city\": \"Semarang\",\n            \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n            \"price\": {\n                \"$numberDecimal\": \"110\"\n            },\n            \"description\": \"Venus Futsal Club terletak di Kota Semarang, tepatnya di Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272. Venus Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:51:22.789Z\",\n            \"updated_at\": \"2021-01-20T01:28:36.520Z\",\n            \"id\": \"600513ca38232609d343d6c0\"\n        }\n    ],\n    \"totalData\": 1\n}"
+						},
+						{
+							"name": "Get By Fieldname Error - there are no fields",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?fieldname=Knock",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "fieldname",
+											"value": "Knock"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:29:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-Cqsz2C4e61zWfVviwQ/GKFP+0n0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"field\": {\n            \"msg\": \"there are no fields\",\n            \"param\": \"field\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get By City & Fieldname",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field?city=Jakarta&fieldname=Maestro",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "Jakarta"
+								},
+								{
+									"key": "fieldname",
+									"value": "Maestro"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get By City & Fieldname Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?city=Jakarta&fieldname=Maestro",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Jakarta"
+										},
+										{
+											"key": "fieldname",
+											"value": "Maestro"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:31:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "988"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3dc-n4M01sHoZybem0xg+Wvur3sex20\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"image\": [\n                \"/images/maestro-futsal-77bfad694c8a252d1996f63ed3784895.jpg\",\n                \"/images/maestro-futsal-5f48406c3a0883bf3bf7b54c3b363744.jpg\",\n                \"/images/maestro-futsal-39707c0f27d1f2ea27a3536a1c622896.jpg\",\n                \"/images/maestro-futsal-91eb00d17d55a7a6bad86c377a1cdaa8.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005148338232609d343d6c2\",\n            \"fieldName\": \"Maestro Futsal\",\n            \"city\": \"Jakarta\",\n            \"location\": \"Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Maestro Futsal terletak di Jakarta Pusat, tepatnya di Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720. Maestro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:54:27.107Z\",\n            \"updated_at\": \"2021-01-20T01:26:30.082Z\",\n            \"id\": \"6005148338232609d343d6c2\"\n        }\n    ],\n    \"totalData\": 1\n}"
+						},
+						{
+							"name": "Get By City & Fieldname Error - there are no fields",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field?city=Jakarta&fieldname=Maestrok",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field"
+									],
+									"query": [
+										{
+											"key": "city",
+											"value": "Jakarta"
+										},
+										{
+											"key": "fieldname",
+											"value": "Maestrok"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 20 Jan 2021 03:31:48 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-Cqsz2C4e61zWfVviwQ/GKFP+0n0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"field\": {\n            \"msg\": \"there are no fields\",\n            \"param\": \"field\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fieldName",
+									"value": "Ini dokumentasi API",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Indonesia",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Ini adalah description",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-58-20.jpg",
+										"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-42.jpg",
+										"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-01.jpg",
+										"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field/create",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Field Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-58-20.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-42.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-01.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/create",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:05:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "597"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"255-kQ9ytLBKYEkgmXUpyzNLpQ0+rsc\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": {\n        \"image\": [\n            \"/images/ini-dokumentasi-api-0b195de511ed74ab87c43782caf495c9.jpg\",\n            \"/images/ini-dokumentasi-api-1711d293c8510dbd058bb97dd343d211.jpg\",\n            \"/images/ini-dokumentasi-api-c948106da0b67d27f320c64bab6caf09.jpg\",\n            \"/images/ini-dokumentasi-api-5aaaa6a0bc4051e91d2514d8753f57c9.jpg\"\n        ],\n        \"_id\": \"60014cc6e659c671b081ea56\",\n        \"deleted\": false,\n        \"fieldName\": \"Ini dokumentasi API\",\n        \"location\": \"Indonesia\",\n        \"price\": {\n            \"$numberDecimal\": \"120\"\n        },\n        \"description\": \"Ini adalah description\",\n        \"created_at\": \"2021-01-15T08:05:26.538Z\",\n        \"updated_at\": \"2021-01-15T08:05:26.538Z\",\n        \"id\": \"60014cc6e659c671b081ea56\"\n    }\n}"
+						},
+						{
+							"name": "Error - field's name already exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-58-20.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-42.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-01.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/create",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"create"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:06:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-DnqaW0Y700WmqavjpsLyLo6TwoQ\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"fieldName\": {\n            \"value\": \"Ini dokumentasi API\",\n            \"msg\": \"field's name already exist!\",\n            \"param\": \"fieldName\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Error - field's name already exist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-58-20.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-42.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-57-01.jpg",
+												"/home/elia/Downloads/venus futsal/Screenshot-from-2021-01-12-23-56-19.jpg"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/create",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"create"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:06:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "130"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"82-DnqaW0Y700WmqavjpsLyLo6TwoQ\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"fieldName\": {\n            \"value\": \"Ini dokumentasi API\",\n            \"msg\": \"field's name already exist!\",\n            \"param\": \"fieldName\",\n            \"location\": \"body\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fieldName",
+									"value": "Ini dokumentasi API (update)",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Indonesia",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "120",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "Ini adalah description",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field/update/<<id_field>>",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field",
+								"update",
+								"<<id_field>>"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Error - field's ID not exist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API (update)",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/update/60014cc6e659c671b081ea58",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"update",
+										"60014cc6e659c671b081ea58"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:10:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-Bsrv8eMlfsVdetH5cDhc4HCnz4E\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"id\": {\n            \"value\": \"60014cc6e659c671b081ea58\",\n            \"msg\": \"field's ID not exist!\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Update Field Success - Update field name",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API (update)",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/update/<<id_field>>",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"update",
+										"<<id_field>>"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:09:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "638"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27e-mBQ/6FnmhEGe/HbsmHwyI50nOLc\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": {\n        \"image\": [\n            \"/images/ini-dokumentasi-api-0b195de511ed74ab87c43782caf495c9.jpg\",\n            \"/images/ini-dokumentasi-api-1711d293c8510dbd058bb97dd343d211.jpg\",\n            \"/images/ini-dokumentasi-api-c948106da0b67d27f320c64bab6caf09.jpg\",\n            \"/images/ini-dokumentasi-api-5aaaa6a0bc4051e91d2514d8753f57c9.jpg\"\n        ],\n        \"deleted\": false,\n        \"_id\": \"60014cc6e659c671b081ea56\",\n        \"fieldName\": \"Ini dokumentasi API (update)\",\n        \"location\": \"Indonesia\",\n        \"price\": {\n            \"$numberDecimal\": \"120\"\n        },\n        \"description\": \"Ini adalah description\",\n        \"created_at\": \"2021-01-15T08:05:26.538Z\",\n        \"updated_at\": \"2021-01-15T08:09:17.161Z\",\n        \"id\": \"60014cc6e659c671b081ea56\"\n    }\n}"
+						},
+						{
+							"name": "Error - field's ID not exist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fieldName",
+											"value": "Ini dokumentasi API (update)",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "location",
+											"value": "Indonesia",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "120",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Ini adalah description",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/update/60014cc6e659c671b081ea58",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"update",
+										"60014cc6e659c671b081ea58"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:10:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-Bsrv8eMlfsVdetH5cDhc4HCnz4E\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"id\": {\n            \"value\": \"60014cc6e659c671b081ea58\",\n            \"msg\": \"field's ID not exist!\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field/delete/<<id_field>>",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field",
+								"delete",
+								"<<id_field>>"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Field Success",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/delete/<<id_field>>",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"delete",
+										"<<id_field>>"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:12:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20-vm/Z/2BOn8662yHlXhOLb+gB7yQ\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": null\n}"
+						},
+						{
+							"name": "Error - field's ID not exist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuYWdlckBtYW5hZ2VyLmNvbSIsImlkIjoyOX0sImlhdCI6MTYxMDY5NzY2OH0.ZKOMjTy5UVcUgAZItR1Z7vWdMbx09K9Hn7lik0WTG94",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/delete/60014cc6e659c671b081ea56",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										"delete",
+										"60014cc6e659c671b081ea56"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 15 Jan 2021 08:13:07 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "117"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"75-Sw9kli5Pfq7DqTuo0j9f9qX9wQE\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errors\": {\n        \"id\": {\n            \"value\": \"60014cc6e659c671b081ea56\",\n            \"msg\": \"field's ID not exist!\",\n            \"param\": \"id\",\n            \"location\": \"params\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Field Sort By",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://soka.kuyrek.com:3001/field/?sortByField=desc",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3001",
+							"path": [
+								"field",
+								""
+							],
+							"query": [
+								{
+									"key": "sortByField",
+									"value": "desc"
+								},
+								{
+									"key": "sortByPrice",
+									"value": "asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Field Sort By - Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://soka.kuyrek.com:3001/field/?sortByField=desc",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3001",
+									"path": [
+										"field",
+										""
+									],
+									"query": [
+										{
+											"key": "sortByField",
+											"value": "desc"
+										},
+										{
+											"key": "sortByPrice",
+											"value": "asc",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 22 Jan 2021 02:21:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9395"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24b3-Tan7PxAOzRi1+NKocPju7ijBUp0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"Success\",\n    \"data\": [\n        {\n            \"image\": [\n                \"/images/venus-futsal-club-0f0098d0e5315e14aa020ace575fc10c.jpg\",\n                \"/images/venus-futsal-club-ff9cd9f209c13b52d7e8cb2c85d459ac.jpg\",\n                \"/images/venus-futsal-club-28f916ee091162da7eb760c739c925f9.jpg\",\n                \"/images/venus-futsal-club-574fa2426c41d2e7bbbdb682e9678269.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"600513ca38232609d343d6c0\",\n            \"fieldName\": \"Venus Futsal Club\",\n            \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n            \"price\": {\n                \"$numberDecimal\": \"110\"\n            },\n            \"description\": \"Venus Futsal Club terletak di Kota Semarang, tepatnya di Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272. Venus Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:51:22.789Z\",\n            \"updated_at\": \"2021-01-20T08:14:21.187Z\",\n            \"city\": \"Semarang\",\n            \"id\": \"600513ca38232609d343d6c0\"\n        },\n        {\n            \"image\": [\n                \"/images/sokker-blast-7affaaee7dd281cd6c6a0821e435684f.jpg\",\n                \"/images/sokker-blast-22e34c7c2a9d493c7287af5967611ffb.jpg\",\n                \"/images/sokker-blast-3140c4f920b6f85f2cb9b48b86e1bd6e.jpg\",\n                \"/images/sokker-blast-5af6464c6613574a3ca9265e05c1c634.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051bc438232609d343d6c5\",\n            \"fieldName\": \"Sokker Blast\",\n            \"location\": \"Jl. Nursaid No.09, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251\",\n            \"price\": {\n                \"$numberDecimal\": \"125\"\n            },\n            \"description\": \"Sokker Blast terletak di Kota Bandung, tepatnya di Jl. Nursaid No.09, Balonggede, Kec. Regol, Kota Bandung, Jawa Barat 40251. Sokker Blast terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:25:24.501Z\",\n            \"updated_at\": \"2021-01-20T08:14:06.056Z\",\n            \"city\": \"Bandung\",\n            \"id\": \"60051bc438232609d343d6c5\"\n        },\n        {\n            \"image\": [\n                \"/images/soccer-sport-1ed65cfc4ca24848d3c92cff3ee4cd9f.png\",\n                \"/images/soccer-sport-129e5dd7e551208a26666565601f7426.png\",\n                \"/images/soccer-sport-35b5fbe537ad8b472784491131c9a273.png\",\n                \"/images/soccer-sport-d35b7c5cd62ec21e05dee2b79129a982.png\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60082546b87c1a6cf1df95fb\",\n            \"fieldName\": \"Soccer Sport\",\n            \"city\": \"Bandung\",\n            \"location\": \"jalan sudirman 20\",\n            \"price\": {\n                \"$numberDecimal\": \"130\"\n            },\n            \"description\": \"It's a good one\",\n            \"created_at\": \"2021-01-20T12:42:46.173Z\",\n            \"updated_at\": \"2021-01-20T12:42:46.173Z\",\n            \"id\": \"60082546b87c1a6cf1df95fb\"\n        },\n        {\n            \"image\": [\n                \"/images/rajawali-futsal-cb839207a735f2bdfb00613fd2ed5334.jpg\",\n                \"/images/rajawali-futsal-b538611fed69e4e04401a12ef030c0b3.jpg\",\n                \"/images/rajawali-futsal-74c2acb85f734ad720b78e2ba1fd8f0a.jpg\",\n                \"/images/rajawali-futsal-01af9c12044386a100cea60e64724293.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051e1238232609d343d6c8\",\n            \"fieldName\": \"Rajawali Futsal\",\n            \"location\": \"Gg. Beringin No.47, RT: 001 RW: 001, Pabuaran, Kec. Karawaci, Kota Tangerang, Banten, 15114\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Rajawali Futsal terletak di Kota Tangerang, tepatnya di Gg. Beringin No.47, RT: 001 RW: 001, Pabuaran, Kec. Karawaci, Kota Tangerang, Banten, 15114. Rajawali Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:35:14.142Z\",\n            \"updated_at\": \"2021-01-20T08:13:47.607Z\",\n            \"city\": \"Tangerang\",\n            \"id\": \"60051e1238232609d343d6c8\"\n        },\n        {\n            \"image\": [\n                \"/images/radja-futsal-gayamsari-a84484b96f800bfb277d5b9b4c474be3.jpg\",\n                \"/images/radja-futsal-gayamsari-238af1bdb4bb87da814a75310f6dc46e.jpg\",\n                \"/images/radja-futsal-gayamsari-299ffd5a2ab33ab8ffa105f1e572e2af.jpg\",\n                \"/images/radja-futsal-gayamsari-59315ef2f5b107a8df363be74068d519.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60050ec9ba88db45955da702\",\n            \"fieldName\": \"Radja Futsal Gayamsari\",\n            \"location\": \"Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Radja Futsal Gayamsari terletak di Kota Semarang, tepatnya di Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248. Radja Futsal Gayamsari terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:30:05.133Z\",\n            \"updated_at\": \"2021-01-20T08:13:39.173Z\",\n            \"city\": \"Semarang\",\n            \"id\": \"60050ec9ba88db45955da702\"\n        },\n        {\n            \"image\": [\n                \"/images/planet-futsal-2b1a14afe6cf7d7b1467b6f690353b81.jpg\",\n                \"/images/planet-futsal-28a9da6cc253706e3089152ea2b0f3a5.jpg\",\n                \"/images/planet-futsal-392bbde6b9ac8917718f7fea0aeeab73.jpg\",\n                \"/images/planet-futsal-1feb52c2a5bd0754548b815d77213d67.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005143738232609d343d6c1\",\n            \"fieldName\": \"Planet Futsal\",\n            \"location\": \"Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Planet Futsal terletak di Jakarta Selatan, tepatnya di Jl. Komplek Hankam No. 178, Kebayoran Lama, Jakarta Selatan. Planet Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:53:11.806Z\",\n            \"updated_at\": \"2021-01-20T08:12:24.257Z\",\n            \"city\": \"Jakarta\",\n            \"id\": \"6005143738232609d343d6c1\"\n        },\n        {\n            \"image\": [\n                \"/images/maestro-futsal-77bfad694c8a252d1996f63ed3784895.jpg\",\n                \"/images/maestro-futsal-5f48406c3a0883bf3bf7b54c3b363744.jpg\",\n                \"/images/maestro-futsal-39707c0f27d1f2ea27a3536a1c622896.jpg\",\n                \"/images/maestro-futsal-91eb00d17d55a7a6bad86c377a1cdaa8.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005148338232609d343d6c2\",\n            \"fieldName\": \"Maestro Futsal\",\n            \"location\": \"Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720\",\n            \"price\": {\n                \"$numberDecimal\": \"120\"\n            },\n            \"description\": \"Maestro Futsal terletak di Jakarta Pusat, tepatnya di Jl. Sentani No. 24, RW: 10, Gn. Sahari Utara, Kecamatan Sawah Besar, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta, 10720. Maestro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:54:27.107Z\",\n            \"updated_at\": \"2021-01-20T08:11:30.278Z\",\n            \"city\": \"Jakarta\",\n            \"id\": \"6005148338232609d343d6c2\"\n        },\n        {\n            \"image\": [\n                \"/images/golden-futsal-4d750141c628dd662f9435b82a21e11d.jpg\",\n                \"/images/golden-futsal-945e0aa6d600fa31c32de21c02934635.jpg\",\n                \"/images/golden-futsal-1914215dcc70cd37debcfd0faf087c26.jpg\",\n                \"/images/golden-futsal-9a1121f596a654445911597db43caa8a.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051d3638232609d343d6c7\",\n            \"fieldName\": \"Golden Futsal\",\n            \"location\": \"Jl. Subali Raya No. 6, RT: 1 RW: 4, Krapyak, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50146\",\n            \"price\": {\n                \"$numberDecimal\": \"125\"\n            },\n            \"description\": \"Golden Futsal terletak di Kota Semarang, tepatnya di Jl. Subali Raya No. 6, RT: 1 RW: 4, Krapyak, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50146. Golden Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:31:34.213Z\",\n            \"updated_at\": \"2021-01-20T08:10:50.263Z\",\n            \"city\": \"Semarang\",\n            \"id\": \"60051d3638232609d343d6c7\"\n        },\n        {\n            \"image\": [\n                \"/images/futsal-35-8442448240aa3f356a65ce8cfb96da37.jpg\",\n                \"/images/futsal-35-d0456029f8be17a84d0ce2637f3a0451.jpg\",\n                \"/images/futsal-35-dd543522fbb8163b0645e119b379bc4f.jpg\",\n                \"/images/futsal-35-a2093c2b4e608c9f3be4f24387568879.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"6005159038232609d343d6c4\",\n            \"fieldName\": \"Futsal 35\",\n            \"location\": \"Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248\",\n            \"price\": {\n                \"$numberDecimal\": \"115\"\n            },\n            \"description\": \"Futsal 35 terletak di Kota Semarang, tepatnya di Jl. Majapahit No. 127, Gayamsari, Kec. Gayamsari, Kota Semarang, Jawa Tengah, 50248. Futsal 35 terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:58:56.481Z\",\n            \"updated_at\": \"2021-01-20T08:10:00.046Z\",\n            \"city\": \"Semarang\",\n            \"id\": \"6005159038232609d343d6c4\"\n        },\n        {\n            \"image\": [\n                \"/images/centro-futsal-424c6eced5e1c5adf75dd0eee76b9105.jpg\",\n                \"/images/centro-futsal-8a18c399f64bed66256d8fcab3c00af6.jpg\",\n                \"/images/centro-futsal-1846235dccf11742217d474426cd03e5.jpg\",\n                \"/images/centro-futsal-146c33227684f65ae3ccbd48f0339992.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"600514d338232609d343d6c3\",\n            \"fieldName\": \"Centro Futsal\",\n            \"location\": \"Jl. Margacinta No. 48, Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat, 40286\",\n            \"price\": {\n                \"$numberDecimal\": \"135\"\n            },\n            \"description\": \"Centro Futsal terletak di Kota Bandung, tepatnya di Jl. Margacinta No. 48, Cijaura, Kec. Buahbatu, Kota Bandung, Jawa Barat, 40286. Centro Futsal terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T04:55:47.176Z\",\n            \"updated_at\": \"2021-01-20T08:08:47.893Z\",\n            \"city\": \"Bandung\",\n            \"id\": \"600514d338232609d343d6c3\"\n        },\n        {\n            \"image\": [\n                \"/images/baskhara-futsal-arena-f3e55e3a4ba9d3bf29f21598efdb091f.jpg\",\n                \"/images/baskhara-futsal-arena-c1fe3e538a916fcc7a8402d23688032a.jpg\",\n                \"/images/baskhara-futsal-arena-b3c752141708e494972b46b2f4f42146.jpg\",\n                \"/images/baskhara-futsal-arena-6738471219a3d03b780d08859d9d1670.jpg\"\n            ],\n            \"deleted\": false,\n            \"_id\": \"60051c9138232609d343d6c6\",\n            \"fieldName\": \"Baskhara Futsal Arena\",\n            \"location\": \"Jl. Manyar Jaya Praja I No.47, Menur Pumpungan, Kec. Sukolilo, Kota Surabaya, Jawa Timur, 60118\",\n            \"price\": {\n                \"$numberDecimal\": \"130\"\n            },\n            \"description\": \"Baskhara Futsal Arena terletak di Kota Surabaya, tepatnya di Jl. Manyar Jaya Praja I No.47, Menur Pumpungan, Kec. Sukolilo, Kota Surabaya, Jawa Timur, 60118. Baskhara Futsal Arena terbilang cukup murah untuk penyewaan lapangan futsal, sangat ramah dengan kantong mahasiswa.\",\n            \"created_at\": \"2021-01-18T05:28:49.897Z\",\n            \"updated_at\": \"2021-01-20T08:05:00.390Z\",\n            \"city\": \"Surabaya\",\n            \"id\": \"60051c9138232609d343d6c6\"\n        }\n    ],\n    \"totalData\": 11\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "Get Booked Timeslot",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJfaWQiOiI2MDBiYjA4ODk2ODFlNDJkMGYxNmY4MTAiLCJmdWxsbmFtZSI6ImZhcmlkYSJ9LCJpYXQiOjE2MTEzNzg4NDF9.3tOgYh-axamiwTzcFAGmTNa03X1q04tizIRyE8AGc4A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2020-12-14",
+									"type": "text"
+								},
+								{
+									"key": "id_timeslot[0]",
+									"value": "7",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "passwordConfirmation",
+									"value": "12345678",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3003/booking/600513ca38232609d343d6c0/booked",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"booking",
+								"600513ca38232609d343d6c0",
+								"booked"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Available Timeslot",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "date",
+											"value": "<<YYYY-MM-DD>>",
+											"type": "text"
+										},
+										{
+											"key": "id_timeslot[0]",
+											"value": "7",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "passwordConfirmation",
+											"value": "12345678",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3003/booking/<<id_field>>/booked",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3003",
+									"path": [
+										"booking",
+										"<<id_field>>",
+										"booked"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 23 Jan 2021 05:29:25 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-aRIkM8n7QxszAPZ+ZzdJqulP2ig\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"All time slot are available\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Booked as Person",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJfaWQiOiI2MDBiYjA4ODk2ODFlNDJkMGYxNmY4MTAiLCJmdWxsbmFtZSI6ImZhcmlkYSJ9LCJpYXQiOjE2MTEzNzg4NDF9.3tOgYh-axamiwTzcFAGmTNa03X1q04tizIRyE8AGc4A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2020-12-14",
+									"type": "text"
+								},
+								{
+									"key": "id_timeslot[0]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "id_timeslot[1]",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "team",
+									"value": "A",
+									"type": "text"
+								},
+								{
+									"key": "player_position",
+									"value": "GK",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3003/booking/600513ca38232609d343d6c0/create",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3003",
+							"path": [
+								"booking",
+								"600513ca38232609d343d6c0",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Booked as Person Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "date",
+											"value": "<<YYYY-MM-DD>>",
+											"type": "text"
+										},
+										{
+											"key": "id_timeslot[0]",
+											"value": "<<id_timeslot>>",
+											"type": "text"
+										},
+										{
+											"key": "id_timeslot[1]",
+											"value": "<<id_timeslot>>",
+											"type": "text"
+										},
+										{
+											"key": "team",
+											"value": "<<team>>",
+											"type": "text"
+										},
+										{
+											"key": "player_position",
+											"value": "<<player_position>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3003/booking/<<id_field>>/create",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3003",
+									"path": [
+										"booking",
+										"<<id_field>>",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 23 Jan 2021 05:45:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "648"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"288-8CU0nnsu0OPVH33mE8mPZgYRD+M\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"result\": {\n        \"id_timeslot\": [\n            \"5\",\n            \"7\"\n        ],\n        \"timeslot\": [\n            \"04.00-05.00\",\n            \"06.00-07.00\"\n        ],\n        \"_id\": \"600bb80eb33fd12c75f29945\",\n        \"deleted\": false,\n        \"email\": \"user@gmail.com\",\n        \"fullname\": \"farida\",\n        \"id_field\": \"600513ca38232609d343d6c0\",\n        \"field\": \"Venus Futsal Club\",\n        \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n        \"paymentstatus\": false,\n        \"paymentconfirmation\": \"false\",\n        \"transaction\": false,\n        \"team\": \"A\",\n        \"player_position\": \"GK\",\n        \"date\": \"2020-12-14T00:00:00.000Z\",\n        \"booked\": \"personal\",\n        \"created_at\": \"2021-01-23T05:45:50.665Z\",\n        \"updated_at\": \"2021-01-23T05:45:50.665Z\",\n        \"id\": \"600bb80eb33fd12c75f29945\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Booked as Team",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJfaWQiOiI2MDBiYjA4ODk2ODFlNDJkMGYxNmY4MTAiLCJmdWxsbmFtZSI6ImZhcmlkYSJ9LCJpYXQiOjE2MTEzNzg4NDF9.3tOgYh-axamiwTzcFAGmTNa03X1q04tizIRyE8AGc4A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2020-12-14",
+									"type": "text"
+								},
+								{
+									"key": "id_timeslot[0]",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "team",
+									"value": "B",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3003/booking/600513ca38232609d343d6c0/create/bookedteam",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3003",
+							"path": [
+								"booking",
+								"600513ca38232609d343d6c0",
+								"create",
+								"bookedteam"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Booked as Team Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "date",
+											"value": "<<YYYY-MM-DD>>",
+											"type": "text"
+										},
+										{
+											"key": "id_timeslot[0]",
+											"value": "<<id_timeslot>>",
+											"type": "text"
+										},
+										{
+											"key": "team",
+											"value": "<<team>>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3003/booking/<<id_field>>/create/bookedteam",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3003",
+									"path": [
+										"booking",
+										"<<id_field>>",
+										"create",
+										"bookedteam"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 23 Jan 2021 05:50:59 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "628"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"274-+jjkUMycZLOJFHxVgQpxSrYVFv0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"result\": {\n        \"id_timeslot\": [\n            \"5\"\n        ],\n        \"timeslot\": [\n            \"04.00-05.00\"\n        ],\n        \"_id\": \"600bb943b33fd12c75f29947\",\n        \"deleted\": false,\n        \"email\": \"user@gmail.com\",\n        \"fullname\": \"farida\",\n        \"id_field\": \"600513ca38232609d343d6c0\",\n        \"field\": \"Venus Futsal Club\",\n        \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n        \"paymentstatus\": false,\n        \"paymentconfirmation\": \"false\",\n        \"transaction\": false,\n        \"team\": \"B\",\n        \"player_position\": \"team\",\n        \"date\": \"2020-12-14T00:00:00.000Z\",\n        \"booked\": \"team\",\n        \"created_at\": \"2021-01-23T05:50:59.978Z\",\n        \"updated_at\": \"2021-01-23T05:50:59.978Z\",\n        \"id\": \"600bb943b33fd12c75f29947\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Booked as Field",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJfaWQiOiI2MDBiYjA4ODk2ODFlNDJkMGYxNmY4MTAiLCJmdWxsbmFtZSI6ImZhcmlkYSJ9LCJpYXQiOjE2MTEzNzg4NDF9.3tOgYh-axamiwTzcFAGmTNa03X1q04tizIRyE8AGc4A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2020-12-14",
+									"type": "text"
+								},
+								{
+									"key": "id_timeslot[0]",
+									"value": "6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://soka.kuyrek.com:3003/booking/600513ca38232609d343d6c0/create/bookedfield",
+							"protocol": "https",
+							"host": [
+								"soka",
+								"kuyrek",
+								"com"
+							],
+							"port": "3003",
+							"path": [
+								"booking",
+								"600513ca38232609d343d6c0",
+								"create",
+								"bookedfield"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Booked as Field Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "date",
+											"value": "2020-12-14",
+											"type": "text"
+										},
+										{
+											"key": "id_timeslot[0]",
+											"value": "6",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://soka.kuyrek.com:3003/booking/600513ca38232609d343d6c0/create/bookedfield",
+									"protocol": "https",
+									"host": [
+										"soka",
+										"kuyrek",
+										"com"
+									],
+									"port": "3003",
+									"path": [
+										"booking",
+										"600513ca38232609d343d6c0",
+										"create",
+										"bookedfield"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 23 Jan 2021 05:54:43 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "634"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27a-D0DHh2W+8QdK3Bwf8AfDH5O9FvM\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"result\": {\n        \"id_timeslot\": [\n            \"6\"\n        ],\n        \"timeslot\": [\n            \"05.00-06.00\"\n        ],\n        \"_id\": \"600bba23b33fd12c75f29948\",\n        \"deleted\": false,\n        \"email\": \"user@gmail.com\",\n        \"fullname\": \"farida\",\n        \"id_field\": \"600513ca38232609d343d6c0\",\n        \"field\": \"Venus Futsal Club\",\n        \"location\": \"Jl. Gendong Raya, Sendangmulyo, Tembalang, Sendangmulyo, Kec. Tembalang, Kota Semarang, Jawa Tengah, 50272\",\n        \"paymentstatus\": false,\n        \"paymentconfirmation\": \"false\",\n        \"transaction\": false,\n        \"team\": \"field\",\n        \"player_position\": \"field\",\n        \"date\": \"2020-12-14T00:00:00.000Z\",\n        \"booked\": \"field\",\n        \"created_at\": \"2021-01-23T05:54:43.219Z\",\n        \"updated_at\": \"2021-01-23T05:54:43.219Z\",\n        \"id\": \"600bba23b33fd12c75f29948\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "60068e5b336bed554ab90ccb"
+  },
+  "deleted": false,
+  "email": "farida1w31@gmail.com",
+  "password": "$2b$10$JxLHm.v8QqQsu9XQbssJCe593K6aDcm8NDEHziKG0Np6akvwKgPOK",
+  "fullname": "sayalah",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T07:46:35.265Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T07:46:35.265Z"
+  }
+},{
+  "_id": {
+    "$oid": "60068e61336bed554ab90ccc"
+  },
+  "deleted": false,
+  "email": "farida131@gmail.com",
+  "password": "$2b$10$pCYwzEj/9SWInwY2bZAy2uwr1yLtaNbhNCC72b4xVqqugMAVmrrBi",
+  "fullname": "farida",
+  "role": "user",
+  "description": "berubah",
+  "profilePic": "62142efb5deb41cd808df6e785e64a68.png",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T07:46:41.776Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T23:16:41.990Z"
+  }
+},{
+  "_id": {
+    "$oid": "60068e91336bed554ab90ccd"
+  },
+  "deleted": false,
+  "email": "dhanarahadyan@yahoo.com",
+  "password": "$2b$10$Ee2gTudbyCTWFGgEr6fxj.D1nSdC7DvLYi0vVYnK2Q/fQLFKkU4.W",
+  "fullname": "Rahadyan Nandiwardhana",
+  "role": "user",
+  "description": "Saya adalah pemain sepak bola profesional yang tergabung dalam Tim Nasional Sepak Bola Indonesia U-23, dengan posisi sebagai Forward yang dipercayakan oleh coach dan manager. Saya mencari lawan sebanding untuk bertanding, yang kalah bayar lapangan!",
+  "profilePic": "profile-picture.jpg",
+  "phone": "087871744143",
+  "created_at": {
+    "$date": "2021-01-19T07:47:29.591Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T15:19:17.153Z"
+  }
+},{
+  "_id": {
+    "$oid": "600698875509585729346607"
+  },
+  "deleted": false,
+  "email": "farida@gmail.com",
+  "password": "$2b$10$JseOJjgMFDyacG.fzbLHuOCLpL7NPizoMP8IeHZhQCV4OOZTk54qK",
+  "fullname": "farida",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T08:29:59.386Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T08:29:59.386Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006d1683eb7bc5b1991b118"
+  },
+  "deleted": false,
+  "email": "dino@gmail.com",
+  "password": "$2b$10$v9eQ2uj8YbHthmcQYXwCAumAya0aOO97ylPOZPtEYQhmwodXeVHhK",
+  "fullname": "dinosaurus",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T12:32:40.673Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T14:20:29.232Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006dc6df318385e2e798e04"
+  },
+  "deleted": false,
+  "email": "admin@yahoo.com",
+  "password": "$2b$10$0I2r9gYJFnM7UUNmxjLlFut67NpyCt4f09jWrtd68D0acidpsVq7G",
+  "fullname": "Admin Soka",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T13:19:41.499Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T13:19:41.499Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006dcd8f318385e2e798e05"
+  },
+  "deleted": false,
+  "email": "yopytribuana@yahoo.com",
+  "password": "$2b$10$QjNrirqsg1Y7ktdin9wgceMVgb5BJATKzXsc8G.ssb27bKiUmWTvq",
+  "fullname": "Yopy Tri Buana",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T13:21:28.703Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T13:21:28.703Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006dd62f318385e2e798e06"
+  },
+  "deleted": false,
+  "email": "teddferdy@gmail.com",
+  "password": "$2b$10$JpcYzByrVbr6sHtsLYcuUOLZyLeqQjOXfU5pT9gOZTW5uaGVfvTje",
+  "fullname": "teddy",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T13:23:46.409Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T13:23:46.409Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006eaa9bfea385f5dcbe3af"
+  },
+  "deleted": false,
+  "email": "amazedtech61@gmail.com",
+  "password": "$2b$10$e1EUl/GfZSOF3NOgvl8Coesh8i6MttoVWlww0/b0XuzjmEcqZLvLK",
+  "fullname": "Sugianto",
+  "role": "user",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T14:20:25.606Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T14:20:25.606Z"
+  }
+},{
+  "_id": {
+    "$oid": "6006ee19bfea385f5dcbe3b0"
+  },
+  "deleted": false,
+  "email": "manager@manager.com",
+  "password": "$2b$10$WEZnrB6wlP81vVAtQuxc5OKfosDqxIIg34jUsXCMtJzetn4IOF39q",
+  "fullname": "manager",
+  "role": "manager",
+  "description": "edit your description here",
+  "profilePic": "profile-picture.jpg",
+  "phone": "xxx-xxxxxxxxx",
+  "created_at": {
+    "$date": "2021-01-19T14:35:05.761Z"
+  },
+  "updated_at": {
+    "$date": "2021-01-19T14:35:05.761Z"
+  }
+}]

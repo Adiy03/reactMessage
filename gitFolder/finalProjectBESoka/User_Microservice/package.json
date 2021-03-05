@@ -1,0 +1,41 @@
+{
+  "name": "day5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^5.11.7",
+    "mongoose-delete": "^0.5.3",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon -r ./index.js",
+    "test": "NODE_ENV=test mocha ./tests/*.js --exit",
+    "start": "NODE_ENV=production forever start index.js",
+    "stop": "NODE_ENV=production forever stop index.js"
+  },
+  "author": "eliara",
+  "license": "ISC"
+}
